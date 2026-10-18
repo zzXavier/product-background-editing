@@ -1,2 +1,9 @@
-# product-background-editing
-P01 | Compare foreground-constrained product inpainting, standard inpainting and compositing.
+# 商品背景编辑
+
+Compare foreground-constrained product inpainting, standard inpainting and compositing.
+
+## 当前进度
+
+已建立私有复现仓库并登记上游版本。正在准备上游样例、固定数据划分和实际对照实验。
+
+[交接记录](HANDOFF.md) · [上游版本](UPSTREAM.md)
