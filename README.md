@@ -7,11 +7,12 @@ Run Yahoo's CVPR workshop foreground-conditioned inpainting checkpoint and compa
 Use Python 3.11, install CUDA PyTorch 2.4.1, then `python -m pip install -r requirements.txt`. A CUDA GPU and enough disk space for the multi-GB float32 checkpoint are required. The first run downloads hashed weight files and the pinned upstream pipeline into ignored `.cache/`. Set VISION_MODEL_CACHE to share the model snapshot.
 
 1. `python -m unittest discover -s tests`
-2. `python run.py demo` runs one public商品图 with three comparisons.
+2. `python run.py demo` runs one public product photograph with three comparisons.
 3. `python run.py reproduce` runs both studio colors on two development and two held-out products.
 4. `python run.py evaluate` recomputes scores and the held-out summary from saved PNGs, without loading a model.
 
 `src/data.py` provides attribution-linked ABO input preparation. `src/fetch_yahoo.py` downloads upstream code and weights without reimplementing the model. `run.py` adds paired runs, segmentation, hard compositing, edge and foreground error, reproducible labels, and reporting. The central enlargement exposes packaging text and logo changes visually. Foreground MAE is in RGB byte units; boundary MAE includes legitimate backdrop changes. The background score is a predeclared hue test for a plain red/blue studio prompt. It measures color compliance only. Test subjects never participate in parameter selection.
 
 See HANDOFF.md for current experiment status, links to versioned results and limitations. The extracted mask can miss low-contrast white packaging. The two-bottle conditioner catalog entry is retained for provenance and excluded from experiments because the foreground method assumes one connected product.
+
 
