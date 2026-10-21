@@ -1,3 +1,4 @@
 Upstream code: https://github.com/yahoo/photo-background-generation/tree/a6f12d57031b9cc3dbae54dcb0d2f553ce803265 (Apache-2.0). This repository imports the original nine-channel ControlNet inpainting pipeline downloaded at this immutable revision. The ordinary Diffusers four-channel ControlNet pipeline is incompatible with these weights. The author notebook defines scales 0 and 1 as baseline/treatment; hard compositing, the ABO split and evaluation are local additions.
 
 Weights: https://huggingface.co/yahoo-inc/photo-background-generation/tree/719f1ac136b76609d8bd371606d0eaeda731b0dd . The model card lists Apache-2.0. Weights are fetched separately. Data attribution is recorded in data.md.
+External notebook fixture: original source, mask, and author comparisons are extracted from cells 4, 5, 7 and 10 of the pinned Yahoo notebook and kept locally in the ignored cache. The generated metrics report distinguishes locally measured outputs and author notebook images.

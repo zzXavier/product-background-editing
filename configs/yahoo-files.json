@@ -1,0 +1,102 @@
+[
+  {
+    "rfilename": "controlnet/config.json",
+    "size": 1417,
+    "blobId": "dce60e8788a63ae8cf7304e550580348783014d0"
+  },
+  {
+    "rfilename": "controlnet/diffusion_pytorch_model.safetensors",
+    "size": 1457011160,
+    "blobId": "f9ada5c051ec21839665aa21304ac13e0968bbfa",
+    "lfs": {
+      "sha256": "53e331297a0ba85067f7b23d2f98a7be79886f5e4fcb20c00cd9662fdf596084",
+      "size": 1457011160,
+      "pointerSize": 135
+    }
+  },
+  {
+    "rfilename": "feature_extractor/preprocessor_config.json",
+    "size": 518,
+    "blobId": "0d9d33b883843d1b370da781f3943051067e1b2c"
+  },
+  {
+    "rfilename": "model_index.json",
+    "size": 692,
+    "blobId": "5e08d2aaaf2e0aad0e61cad7fb1a86d19cfdd23f"
+  },
+  {
+    "rfilename": "scheduler/scheduler_config.json",
+    "size": 654,
+    "blobId": "e6c5ff0d158461c2a222eed5212273774366307f"
+  },
+  {
+    "rfilename": "text_encoder/config.json",
+    "size": 723,
+    "blobId": "82147f9a861dd7a84ebd109dc9ebc9739ad73d05"
+  },
+  {
+    "rfilename": "text_encoder/model.safetensors",
+    "size": 1361596304,
+    "blobId": "2a15244d500b3f15e33c70fb298b91591701efd0",
+    "lfs": {
+      "sha256": "67e013543d4fac905c882e2993d86a2d454ee69dc9e8f37c0c23d33a48959d15",
+      "size": 1361596304,
+      "pointerSize": 135
+    }
+  },
+  {
+    "rfilename": "tokenizer/added_tokens.json",
+    "size": 67,
+    "blobId": "5ff4ac542d5e800dd3aadbdcda354868b5f24ddd"
+  },
+  {
+    "rfilename": "tokenizer/merges.txt",
+    "size": 524619,
+    "blobId": "76e821f1b6f0a9709293c3b6b51ed90980b3166b"
+  },
+  {
+    "rfilename": "tokenizer/special_tokens_map.json",
+    "size": 211,
+    "blobId": "1ddd1525dce2b5961fc7f73af86d1611a276a2ee"
+  },
+  {
+    "rfilename": "tokenizer/tokenizer_config.json",
+    "size": 973,
+    "blobId": "2770e94f788d137be8b5c2a2515d2b9648b71908"
+  },
+  {
+    "rfilename": "tokenizer/vocab.json",
+    "size": 1059962,
+    "blobId": "469be27c5c010538f845f518c4f5e8574c78f7c8"
+  },
+  {
+    "rfilename": "unet/config.json",
+    "size": 1881,
+    "blobId": "23f6e2c8228498d92ba80c23cf719e863be047e8"
+  },
+  {
+    "rfilename": "unet/diffusion_pytorch_model.safetensors",
+    "size": 3463784120,
+    "blobId": "d9654106aa73647232d06ef1773c32b144e7b217",
+    "lfs": {
+      "sha256": "a2f90a6d2f3f65959aa6c67e4e7728e32108d08c8a55603b0ea6d762cf224420",
+      "size": 3463784120,
+      "pointerSize": 135
+    }
+  },
+  {
+    "rfilename": "vae/config.json",
+    "size": 765,
+    "blobId": "b443e2a2b9fb40d905471de4c8bd149154f44403"
+  },
+  {
+    "rfilename": "vae/diffusion_pytorch_model.safetensors",
+    "size": 334643268,
+    "blobId": "d6fc2b1f7ae2b1f4f83c25812f819a17473f0c1a",
+    "lfs": {
+      "sha256": "2aa1f43011b553a4cba7f37456465cdbd48aab7b54b9348b890e8058ea7683ec",
+      "size": 334643268,
+      "pointerSize": 134
+    }
+  }
+]

@@ -56,42 +56,33 @@ def write_chunk(task):
 
 def download():
     CACHE.mkdir(parents=True, exist_ok=True)
-    marker = CACHE / "complete.json"
-    if marker.exists() and all(
-        (CACHE / path).is_file() for path in json.loads(marker.read_text())
-    ):
-        return CACHE
-    api = requests.get(
-        f"https://huggingface.co/api/models/{REPO}/revision/{REVISION}",
-        params={"blobs": "true"},
-        timeout=30,
-    )
-    api.raise_for_status()
-    for item in api.json()["siblings"]:
+    entries = json.loads((ROOT / "configs" / "yahoo-files.json").read_text())
+    for item in entries:
         name = item["rfilename"]
-        if not (
-            name == "model_index.json"
-            or name.startswith(
-                (
-                    "scheduler/",
-                    "controlnet/",
-                    "vae/",
-                    "tokenizer/",
-                    "text_encoder/",
-                    "unet/",
-                    "feature_extractor/",
-                )
-            )
-        ) or name.endswith(".bin"):
-            continue
         dest = CACHE / name
         if dest.exists() and dest.stat().st_size == item["size"]:
-            continue
+            if "lfs" in item:
+                with dest.open("rb") as handle:
+                    valid = (
+                        hashlib.file_digest(handle, "sha256").hexdigest()
+                        == item["lfs"]["sha256"]
+                    )
+            else:
+                data = dest.read_bytes()
+                valid = (
+                    hashlib.sha1(f"blob {len(data)}\0".encode() + data).hexdigest()
+                    == item["blobId"]
+                )
+            if valid:
+                continue
         dest.parent.mkdir(parents=True, exist_ok=True)
         if "lfs" not in item:
             r = requests.get(url_for(name), timeout=45)
             r.raise_for_status()
-            if len(r.content) != item["size"]:
+            blob_hash = hashlib.sha1(
+                f"blob {len(r.content)}\0".encode() + r.content
+            ).hexdigest()
+            if len(r.content) != item["size"] or blob_hash != item["blobId"]:
                 raise IOError(name)
             dest.write_bytes(r.content)
             continue
@@ -132,16 +123,11 @@ def download():
         )
         response.raise_for_status()
         code.write_bytes(response.content)
-    marker.write_text(
-        json.dumps(
-            [
-                str(p.relative_to(CACHE))
-                for p in CACHE.rglob("*")
-                if p.is_file() and p.suffix in {".json", ".txt", ".py", ".safetensors"}
-            ],
-            indent=2,
-        )
-    )
+    if (
+        hashlib.sha256(code.read_bytes()).hexdigest()
+        != "0f22ebc99a006bab9678bf9d3a339b18cfd3ac9c037c30aeff55f277f8c13a7d"
+    ):
+        raise ValueError("Upstream source SHA-256 mismatch")
     return CACHE
 
 
