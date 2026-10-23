@@ -2,7 +2,6 @@
 
 import hashlib
 import json
-from pathlib import Path
 
 try:
     from .data import ROOT, items, prepare
