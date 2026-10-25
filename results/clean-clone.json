@@ -1,0 +1,17 @@
+{
+  "clean_clone_commit": "28047ab6922eaac9e1da8549ff0b06a346bdec31",
+  "environment": "Separate virtual environment; verified immutable weights reused; clean clone fetched product inputs and re-ran GPU demo, full generation and offline evaluation.",
+  "requests": 8,
+  "predictions": 24,
+  "verified_input_images_and_masks": 16,
+  "bitwise_identical_prediction_pngs": 24,
+  "max_per_image_mean_abs_rgb_0_255": 0.0,
+  "max_channel_difference": 0.0,
+  "max_metric_differences": {
+    "foreground_mae": 0.0,
+    "boundary_mae": 0.0,
+    "target_hue_fraction": 0.0
+  },
+  "demo": "1 real request / 3 methods",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+}
