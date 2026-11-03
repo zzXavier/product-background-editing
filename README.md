@@ -41,7 +41,7 @@ Control increased hue coverage in this small set, with slightly higher average f
 - `src/fetch_yahoo.py` loads the author's original nine-channel implementation and verifies the model's immutable Git blob IDs and LFS SHA-256 values listed in `configs/yahoo-files.json`. Interrupted transfers resume from checked byte ranges.
 - `src/data.py` fetches ABO packshots by ID, verifies their hashes and extracts a foreground mask from the near-white border. A two-object input is excluded because the mask procedure retains one connected object. White packaging can be under-segmented.
 - `run.py` runs paired alternatives and recomputes evaluation from saved images. Pass `--output` to keep an independent reproduction separate from the shipped results.
-- `src/prepare_examples.py` exports the P01/P13 handoff. [The small bundle](examples/products/manifest.json) contains four input PNGs, masks, prompts and per-file SHA-256 values.
+- `src/prepare_examples.py` exports the product images and masks used by the [Replayable Image Editing Agent](https://github.com/zzXavier/replayable-image-editing-agent). [The small bundle](examples/products/manifest.json) contains four input PNGs, masks, prompts and per-file SHA-256 values.
 
 [Data attribution](data.md) · [Upstream provenance](UPSTREAM.md) · [Handoff](HANDOFF.md)
 
