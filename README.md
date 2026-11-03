@@ -6,6 +6,8 @@ Replace the background of a public product photograph while inspecting the print
 
 With a CUDA-enabled environment, run `python run.py demo` for one product. The first run obtains the pinned Yahoo model (about 6.2 GiB of weights). To share it across clean clones, set VISION_MODEL_CACHE to the directory containing the yahoo-background subfolder.
 
+The ABO small catalog photographs have a 256 px long edge. They are resized and padded to 384 px for editing. Packaging-text and logo crops measure changes to these input pixels; the evaluation cannot establish fidelity to finer printing absent from the inputs.
+
 ## Installation and reproduction
 
 Use Python 3.11 and CUDA-enabled PyTorch 2.4.1. Install the remaining packages with `python -m pip install -r requirements-verified.txt`. The verified machine used PyTorch 2.4.1+cu121, an RTX 4060 Laptop GPU with 8 GB VRAM and CPU offload. Model files remain outside Git.
