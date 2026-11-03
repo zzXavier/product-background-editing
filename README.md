@@ -43,3 +43,4 @@ Control increased hue coverage in this small set, with slightly higher average f
 
 [Data attribution](data.md) · [Upstream provenance](UPSTREAM.md) · [Handoff](HANDOFF.md)
 
+The clean-clone GPU rerun produced byte-identical PNGs for all 24 method outputs, with zero differences across the three computed metrics. [Independent audit](results/clean-clone.json)
