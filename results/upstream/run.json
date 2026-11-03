@@ -1,0 +1,26 @@
+{
+  "checkpoint": "719f1ac136b76609d8bd371606d0eaeda731b0dd",
+  "upstream_code": "a6f12d57031b9cc3dbae54dcb0d2f553ce803265",
+  "prompt": "A dark swan in a bedroom",
+  "seed": 13,
+  "steps": 20,
+  "size": [
+    512,
+    512
+  ],
+  "dtype": "float16",
+  "torch": "2.4.1+cu121",
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "results": {
+    "plain": {
+      "wall_seconds": 7.965423800000281,
+      "sha256": "1590902d4bb456d1bc778e58899d026e0f7ac3c136396db0f411a9b07185a082",
+      "mae_vs_embedded_author_output": 1.0996106465657551
+    },
+    "controlled": {
+      "wall_seconds": 5.512518399998953,
+      "sha256": "bada2d9ccb4a7bdb9b262112ad5a9e4f7a2661bc2622dccf841066dbe8a57218",
+      "mae_vs_embedded_author_output": 0.8198026021321615
+    }
+  }
+}

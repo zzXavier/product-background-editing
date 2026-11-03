@@ -1,0 +1,161 @@
+{
+  "status": "completed",
+  "model": "719f1ac136b76609d8bd371606d0eaeda731b0dd",
+  "source": "a6f12d57031b9cc3dbae54dcb0d2f553ce803265",
+  "config": {
+    "size": 384,
+    "steps": 12,
+    "seed": 13
+  },
+  "torch": "2.4.1+cu121",
+  "diffusers": "0.27.2",
+  "python": "3.11.9",
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "cases": [
+    {
+      "id": "B07FFHHG1Q",
+      "split": "dev",
+      "case": "B07FFHHG1Q-red",
+      "prompt": "Product photo of lemonade on a plain red studio background",
+      "color": "red",
+      "sha256": "064e8dc335dd10e66aa6356a82e9e6a8b790beaef177675e42d1e9860ac9d700",
+      "timings": {
+        "plain": {
+          "seconds": 4.259575999996741,
+          "cuda_allocated_mb": 2635.7236328125
+        },
+        "controlled": {
+          "seconds": 3.0815493000045535,
+          "cuda_allocated_mb": 2633.8017578125
+        }
+      }
+    },
+    {
+      "id": "B07FFHHG1Q",
+      "split": "dev",
+      "case": "B07FFHHG1Q-blue",
+      "prompt": "Product photo of lemonade on a plain blue studio background",
+      "color": "blue",
+      "sha256": "064e8dc335dd10e66aa6356a82e9e6a8b790beaef177675e42d1e9860ac9d700",
+      "timings": {
+        "plain": {
+          "seconds": 3.6674127000005683,
+          "cuda_allocated_mb": 2634.3955078125
+        },
+        "controlled": {
+          "seconds": 3.493866999997408,
+          "cuda_allocated_mb": 2637.6298828125
+        }
+      }
+    },
+    {
+      "id": "B07QCR35JF",
+      "split": "dev",
+      "case": "B07QCR35JF-red",
+      "prompt": "Product photo of pumpkin coffee on a plain red studio background",
+      "color": "red",
+      "sha256": "60ac0d29135f434b81798b24e12e855fbf51b9abacfa9303f0bdec55b2682a7d",
+      "timings": {
+        "plain": {
+          "seconds": 3.157915099996899,
+          "cuda_allocated_mb": 2638.6142578125
+        },
+        "controlled": {
+          "seconds": 3.0572807999997167,
+          "cuda_allocated_mb": 2636.63232421875
+        }
+      }
+    },
+    {
+      "id": "B07QCR35JF",
+      "split": "dev",
+      "case": "B07QCR35JF-blue",
+      "prompt": "Product photo of pumpkin coffee on a plain blue studio background",
+      "color": "blue",
+      "sha256": "60ac0d29135f434b81798b24e12e855fbf51b9abacfa9303f0bdec55b2682a7d",
+      "timings": {
+        "plain": {
+          "seconds": 2.9766734000004362,
+          "cuda_allocated_mb": 2638.4423828125
+        },
+        "controlled": {
+          "seconds": 3.046835799999826,
+          "cuda_allocated_mb": 2633.5517578125
+        }
+      }
+    },
+    {
+      "id": "B074H6ZXT5",
+      "split": "test",
+      "case": "B074H6ZXT5-red",
+      "prompt": "Product photo of coffee on a plain red studio background",
+      "color": "red",
+      "sha256": "c43e6388f5acd9e1753d79979c95c3428b16ea6111a2563cdbae6cd83e6ab308",
+      "timings": {
+        "plain": {
+          "seconds": 3.84837300000072,
+          "cuda_allocated_mb": 2637.4345703125
+        },
+        "controlled": {
+          "seconds": 3.121346799998719,
+          "cuda_allocated_mb": 2636.1611328125
+        }
+      }
+    },
+    {
+      "id": "B074H6ZXT5",
+      "split": "test",
+      "case": "B074H6ZXT5-blue",
+      "prompt": "Product photo of coffee on a plain blue studio background",
+      "color": "blue",
+      "sha256": "c43e6388f5acd9e1753d79979c95c3428b16ea6111a2563cdbae6cd83e6ab308",
+      "timings": {
+        "plain": {
+          "seconds": 2.899101700000756,
+          "cuda_allocated_mb": 2638.2392578125
+        },
+        "controlled": {
+          "seconds": 2.9458706000004895,
+          "cuda_allocated_mb": 2633.5517578125
+        }
+      }
+    },
+    {
+      "id": "B0752GQ94S",
+      "split": "test",
+      "case": "B0752GQ94S-red",
+      "prompt": "Product photo of shampoo on a plain red studio background",
+      "color": "red",
+      "sha256": "66904bf37f849c12fd9aeb6633e57271b8e6fa92a6418d93b5453a68e21ae213",
+      "timings": {
+        "plain": {
+          "seconds": 2.8962561000007554,
+          "cuda_allocated_mb": 2637.4345703125
+        },
+        "controlled": {
+          "seconds": 3.1588846999948146,
+          "cuda_allocated_mb": 2638.0048828125
+        }
+      }
+    },
+    {
+      "id": "B0752GQ94S",
+      "split": "test",
+      "case": "B0752GQ94S-blue",
+      "prompt": "Product photo of shampoo on a plain blue studio background",
+      "color": "blue",
+      "sha256": "66904bf37f849c12fd9aeb6633e57271b8e6fa92a6418d93b5453a68e21ae213",
+      "timings": {
+        "plain": {
+          "seconds": 3.230878300004406,
+          "cuda_allocated_mb": 2638.89794921875
+        },
+        "controlled": {
+          "seconds": 3.6987122999998974,
+          "cuda_allocated_mb": 2635.4423828125
+        }
+      }
+    }
+  ],
+  "expected_cases": 8
+}

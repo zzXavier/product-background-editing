@@ -6,7 +6,6 @@ from io import BytesIO
 import hashlib
 import json
 import time
-from pathlib import Path
 import numpy as np
 from PIL import Image, ImageOps
 import requests

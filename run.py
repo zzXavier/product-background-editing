@@ -2,11 +2,9 @@
 
 import argparse
 import csv
-import hashlib
 import importlib.util
 import json
 import platform
-import sys
 import time
 from pathlib import Path
 import numpy as np
@@ -88,6 +86,8 @@ def evaluate(out):
     if subset:
         from src.panels import detail_panel
 
+        for item in sorted({r["id"] for r in subset}):
+            detail_panel(out / (item + "-red"), out / ("details-" + item + ".jpg"))
         worst = min(subset, key=lambda r: r["target_hue_fraction"])
         detail_panel(
             out / (worst["id"] + "-" + worst["color"]), out / "lowest-scene-score.jpg"

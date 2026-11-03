@@ -1,7 +1,5 @@
 """Recover complete range chunks left by an interrupted sequential checkpoint download."""
 
-from pathlib import Path
-import argparse
 from fetch_yahoo import CACHE, CHUNK
 
 

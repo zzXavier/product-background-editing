@@ -1,0 +1,23 @@
+[
+  {
+    "method": "plain",
+    "cases": 4,
+    "foreground_mae": 10.117611961425,
+    "boundary_mae": 41.12097746913835,
+    "target_hue_fraction": 0.6456815128252855
+  },
+  {
+    "method": "controlled",
+    "cases": 4,
+    "foreground_mae": 10.461939973102162,
+    "boundary_mae": 40.003466427042056,
+    "target_hue_fraction": 0.7146739274699585
+  },
+  {
+    "method": "composite",
+    "cases": 4,
+    "foreground_mae": 0.0,
+    "boundary_mae": 33.517347390279795,
+    "target_hue_fraction": 0.6456815128252855
+  }
+]
