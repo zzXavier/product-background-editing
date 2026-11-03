@@ -16,3 +16,4 @@ Use Python 3.11, install CUDA PyTorch 2.4.1, then `python -m pip install -r requ
 See HANDOFF.md for current experiment status, links to versioned results and limitations. The extracted mask can miss low-contrast white packaging. The two-bottle conditioner catalog entry is retained for provenance and excluded from experiments because the foreground method assumes one connected product.
 
 
+To reproduce the actual author notebook example rather than the product benchmark, run python -m src.upstream_example. It extracts the saved swan image and foreground mask from the immutable notebook itself, uses the original bedroom prompt, 512 px, seed 13, 20 steps and control scales 0 and 1. The report logs MAE versus the two embedded author notebook outputs and local output hashes; bitwise equality is not expected for fp16.
