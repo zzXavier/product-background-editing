@@ -1,4 +1,4 @@
-"""Export the small P01 public input bundle consumed by the editing-agent experiment."""
+"""Export the public product image and mask bundle consumed by the editing-agent experiment."""
 
 import hashlib
 import json
