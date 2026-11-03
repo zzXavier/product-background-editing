@@ -1,9 +1,1 @@
-# P01 交接记录
-
-当前阶段：上游版本已固定，正式验收待完成。
-
-最近已核实：项目远端以及 UPSTREAM.md 中的源码提交。
-
-待执行：运行上游入口 inference.ipynb ，保存日志，再按项目 README 的实验目标添加留出集对照。
-
-验收要求：从干净克隆运行演示与正式基线，使用保存的预测重建结果，涉及训练则测试权重重载。
+Development stage: 5 pairs of real ABO catalog photographs fetched; immutable source manifest and comparison inputs are in configs/products.json and examples/source-images.jpg. Four single-object photographs are used by the experimental protocol. Downloading the pinned Yahoo components. Next: install requirements in the project environment, then run python run.py demo and python run.py reproduce. Only a complete manifest, saved predictions, recomputed summary and independent clean-clone run count for publication.
